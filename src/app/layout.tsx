@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased bg-gray-50 dark:bg-black text-gray-900 dark:text-gray-100 flex flex-col min-h-screen`}>
+    <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
+      <body className={`font-sans antialiased bg-gray-50 dark:bg-black text-gray-900 dark:text-gray-100 flex flex-col min-h-screen overflow-x-hidden w-full max-w-[100vw]`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <AuthProvider>
             <Header />

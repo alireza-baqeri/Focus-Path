@@ -13,7 +13,7 @@ import { ArrowRight, CheckCircle, BarChart2, Clock, Sparkles } from "lucide-reac
  */
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#02020a] overflow-hidden selection:bg-purple-500/30 font-sans">
+    <div className="min-h-screen bg-[#02020a] font-sans w-full max-w-[100vw] overflow-x-hidden relative">
       {/* Background Ambient Glows */}
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-700/20 rounded-full blur-[120px] -z-10 pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[150px] -z-10 pointer-events-none" />

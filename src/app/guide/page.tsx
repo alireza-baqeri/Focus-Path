@@ -1,4 +1,4 @@
-import { CheckCircle2, Compass, PlayCircle, BarChart2 } from "lucide-react";
+import { CheckCircle2, Compass, PlayCircle, BarChart2, BookOpen, FileText, ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "User Guide | Focus Path",
@@ -90,6 +90,64 @@ export default function GuidePage() {
                 <span><strong>Predictive Completion:</strong> Based on your average learning speed, the app predicts exactly how many days it will take to finish your ongoing courses.</span>
               </li>
             </ul>
+          </section>
+
+          {/* Section 4: Academic Resources & Time Management Science */}
+          <section className="bg-white/[0.02] border border-white/5 p-8 rounded-3xl mt-16 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] -z-10" />
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-indigo-500/10 rounded-xl border border-indigo-500/20">
+                <BookOpen className="w-6 h-6 text-indigo-400" />
+              </div>
+              <h2 className="text-2xl font-bold text-white">4. The Science of Focus (Academic Resources)</h2>
+            </div>
+            <p className="text-gray-400 leading-relaxed mb-6">
+              Focus Path is built on proven psychological and neurobiological principles of attention. If you want to dive deeper into the science of time management, explore these curated resources:
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Resource 1 */}
+              <div className="p-6 bg-black/40 rounded-2xl border border-white/5 hover:border-indigo-500/30 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <PlayCircle className="w-5 h-5 text-red-400" />
+                  <h3 className="font-semibold text-white">Huberman Lab: Focus & Concentration</h3>
+                </div>
+                <p className="text-sm text-gray-400 mb-4">
+                  Stanford neurobiologist Dr. Andrew Huberman explains the science of focus, dopamine circuits, and how to train your brain for 90-minute ultradian cycles.
+                </p>
+                <a href="https://www.youtube.com/watch?v=hFL6qRIJZ_Y" target="_blank" rel="noopener noreferrer" className="text-indigo-400 text-sm hover:underline flex items-center gap-1">
+                  Watch Lecture <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+
+              {/* Resource 2 */}
+              <div className="p-6 bg-black/40 rounded-2xl border border-white/5 hover:border-amber-500/30 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <BookOpen className="w-5 h-5 text-amber-400" />
+                  <h3 className="font-semibold text-white">Deep Work by Cal Newport</h3>
+                </div>
+                <p className="text-sm text-gray-400 mb-4">
+                  Georgetown University computer science professor Cal Newport defines "Deep Work" and explains why it is the most valuable skill in the 21st-century economy.
+                </p>
+                <a href="https://calnewport.com/deep-work-rules-for-focused-success-in-a-distracted-world/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 text-sm hover:underline flex items-center gap-1">
+                  Read Summary <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+
+              {/* Resource 3 */}
+              <div className="p-6 bg-black/40 rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <FileText className="w-5 h-5 text-emerald-400" />
+                  <h3 className="font-semibold text-white">The Pomodoro Technique (Original Paper)</h3>
+                </div>
+                <p className="text-sm text-gray-400 mb-4">
+                  Francesco Cirillo's original research on timeboxing and its effects on anxiety, cognitive load, and sustained productivity over long study sessions.
+                </p>
+                <a href="https://francescocirillo.com/products/the-pomodoro-technique" target="_blank" rel="noopener noreferrer" className="text-indigo-400 text-sm hover:underline flex items-center gap-1">
+                  View Source <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
           </section>
 
         </div>
